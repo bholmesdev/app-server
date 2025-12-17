@@ -28,7 +28,7 @@ cd error-trigger
 go mod download
 ```
 
-Then, you can verify that the `warp-agent-sdk` is able to connect by running the `test.js` scriipt. This will start a coding agent and poll for a session link for you to interact with the agent as it is running.
+Then, you can verify that the `warp-agent-sdk` is able to connect by running the `test.js` script. This will start a coding agent and poll for a session link for you to interact with the agent as it is running.
 
 You can [create a Warp API key](https://docs.warp.dev/developers/cli#generating-api-keys) and set as an environment variable in a `.env` file. Copy the example template like so:
 
