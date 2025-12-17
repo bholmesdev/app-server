@@ -1,0 +1,27 @@
+{
+  "name": "sentry-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --env-file .env src/index.ts",
+    "start": "tsx --env-file .env src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hono/node-server": "^1.19.7",
+    "@sentry/node": "^10.29.0",
+    "hono": "^4.10.8",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "warp-agent-sdk": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.2",
+    "tsm": "^2.3.0"
+  }
+}
