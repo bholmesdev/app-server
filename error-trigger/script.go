@@ -24,6 +24,19 @@ func main() {
 
 	defer sentry.Recover()
 
-	var p *int
-	_ = *p // nil pointer dereference
+	// Process configuration
+	config := loadConfig()
+	log.Printf("Starting with timeout: %d seconds", *config.Timeout)
+}
+
+type Config struct {
+	Timeout *int
+	Retries int
+}
+
+func loadConfig() *Config {
+	// TODO: load from environment or config file
+	return &Config{
+		Retries: 3,
+	}
 }
