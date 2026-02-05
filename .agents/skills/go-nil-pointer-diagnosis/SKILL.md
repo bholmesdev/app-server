@@ -1,3 +1,8 @@
+---
+name: nil-pointer-debugger
+description: "Diagnose nil pointer dereference errors in GoLang"
+---
+
 # Go Nil Pointer Exception Diagnosis
 
 Diagnose and fix nil pointer dereference panics in Go code.
