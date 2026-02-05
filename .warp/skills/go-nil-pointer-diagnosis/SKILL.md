@@ -1,5 +1,5 @@
 ---
-name: nil-pointer-debugger
+name: go-nil-pointer-diagnosis
 description: "Diagnose nil pointer dereference errors in GoLang"
 ---
 
