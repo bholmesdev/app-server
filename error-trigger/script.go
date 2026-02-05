@@ -36,7 +36,9 @@ type Config struct {
 
 func loadConfig() *Config {
 	// TODO: load from environment or config file
+	defaultTimeout := 30
 	return &Config{
+		Timeout: &defaultTimeout,
 		Retries: 3,
 	}
 }
