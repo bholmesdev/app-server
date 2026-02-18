@@ -26,6 +26,11 @@ func main() {
 
 	// Process configuration
 	config := loadConfig()
+	if config.Timeout == nil {
+		defaultTimeout := 30
+		config.Timeout = &defaultTimeout
+		log.Println("Warning: no timeout configured, using default of 30 seconds")
+	}
 	log.Printf("Starting with timeout: %d seconds", *config.Timeout)
 }
 
